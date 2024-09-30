@@ -56,7 +56,7 @@ To run this project, you'll need:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/job-searching-web-app.git
+   git clone https://github.com/codewithhermes/job-searching-web-app.git
    ```
 2. Navigate to the project directory:
    ```bash
