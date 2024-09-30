@@ -109,7 +109,7 @@ Follow these steps to run the project directly using Maven:
 1. **Clone the Repository**:  
    First, you need to clone the GitHub repository of the project to your local machine:
    ```bash
-   git clone https://github.com/username/job-searching-web-app.git
+   git clone https://github.com/codewithhermes/job-searching-web-app.git
    cd job-searching-web-app
    ```
 
