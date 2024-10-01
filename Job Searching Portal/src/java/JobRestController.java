@@ -27,17 +27,9 @@ public class JobRestController {
     //@PostMapping(path="jobPost",consumes = {"application/xml"}) //this method will only get xml format data
    
 
-    @PutMapping("jobPost")
-    public JobPost updateJob(@RequestBody JobPost jobPost){
-        service.updateJob(jobPost);
-        return service.getJob(jobPost.getPostId());
-    }
+    
 
-    @DeleteMapping("jobPost/{postID}")
-    public String deleteJob(@PathVariable int postID){
-        service.deleteJob(postID);
-        return "Deleted";
-    }
+   
 
     @GetMapping("/load")
     public String loadData(){
