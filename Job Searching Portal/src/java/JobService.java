@@ -21,10 +21,7 @@ public class JobService {
           repo.save(jobPost);
     }
 
-    public List<JobPost> getAllJobs(){
-//        return repo.getAllJobs();
-          return repo.findAll();
-    }
+   
 
 
     public JobPost getJob(int postId) {
