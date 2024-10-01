@@ -25,7 +25,13 @@ public class JobRestController {
     }
 
     //@PostMapping(path="jobPost",consumes = {"application/xml"}) //this method will only get xml format data
-   
+   @PostMapping("jobPost")
+    public JobPost addJob(@RequestBody JobPost jobPost){
+
+        service.addJob(jobPost);
+        return service.getJob(jobPost.getPostId());
+    }
+
 
     
 
