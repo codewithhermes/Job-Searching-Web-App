@@ -30,6 +30,12 @@ public class JobService {
         return repo.findById(postId).orElse(new JobPost(0,null,null,0,null));
     }
 
+    public List<JobPost> getAllJobs()
+    {
+        return repo.findAll(); //custom finder method from jobRepo to find all jobs 
+    }
+    
+
     public void updateJob(JobPost jobPost) {
 //        repo.updateJob(jobPost);
           repo.save(jobPost);
