@@ -24,7 +24,10 @@ public class JobService {
    public List<JobPost> getAllJobs(){
           return repo.findAll();
     }
-
+public void addJob(JobPost jobPost){
+//        repo.addJob(jobPost); //here jobPost is a DTO i.e Data Transfer obj
+          repo.save(jobPost);
+    }
 
 
 
