@@ -43,9 +43,9 @@ public void addJob(JobPost jobPost){
     }
     
 
-    public void updateJob(JobPost jobPost) {
+    public JobPost updateJob(JobPost jobPost) {
 //        repo.updateJob(jobPost);
-          repo.save(jobPost);
+          return repo.save(jobPost); //return updated JobPost
     }
 
     public void deleteJob(int postID) {
