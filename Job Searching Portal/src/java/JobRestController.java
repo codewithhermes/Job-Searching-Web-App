@@ -32,8 +32,7 @@ public class JobRestController {
         return service.getJob(jobPost.getPostId());
     }
     @PutMapping("jobPost") public JobPost updateJob(@RequestBody JobPost jobPost){
-        service.updateJob(jobPost);
-        return service.getJob(jobPost.getPostId()); }
+        return service.updateJob(jobPost);}
      @DeleteMapping("jobPost/{postID}")
     public String deleteJob(@PathVariable int postID){
         service.deleteJob(postID);
